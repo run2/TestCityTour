@@ -70,62 +70,20 @@ class TestCityTour():
         logger.setLevel(level=LEVELS[logLevel])
     
     def getCityMap(self,props):
-        connections = props['map']
+        value = props['map']
         citymap = CityMap()
-        edges = {}
-        
-        noOfEdges = len(connections.split(';'))
-        
-        if(noOfEdges == 0 ):
-            raise ValueError('No Edges are specified')
-        
-        for node in connections.split(';'):
-            logger.debug('Next node ' + node)
-            edges[node.split(':')[0]] = node.split(':') [1].split(',')
-        
-        logger.info('Edges initialized as ' + str(edges))
-        citymap.edges = edges
-        
-
-        
-        # can be optimized to hold single entry for bi-directional paths
-        connections = props['dist']
-
-        noOfDistances = len(connections.split(';'))
-
-        if(0 == noOfDistances or noOfDistances != noOfEdges):
-            raise ValueError('No Distances specified OR does not match with edges')
-
-        edgeDistances = {}
-        for currentNode in connections.split(';'):
-            logger.debug('Next node ' + currentNode)
-            source = currentNode.split(':')[0]
-            distances = currentNode.split(':')[1].split(',')
-            destinations = edges[source]
-            for dist, dest  in zip(distances,destinations):
-                edgeDistances[source + '-' + dest] = dist
-        
-        logger.info('Distances initialized as ' + str(edgeDistances))
-        citymap.distances = edgeDistances
+        citymap.setEdges(value)
 
         # can be optimized to hold single entry for bi-directional paths
-        connections = props['waittimes']
+        value = props['dist']
+        citymap.setDistances(value)
 
-        noOfWaits = len(connections.split(';'))
+        value = props['waittimes']
+        citymap.setWaitTimes(value)
 
-        if(0 == noOfWaits or noOfWaits!= noOfDistances ):
-            raise ValueError('No Wait times specified OR does not match with edges')
+        value = props['avgspeed']
+        citymap.setAvgSpeed(value)
 
-        waitTimes = {}
-        for currentNode in connections.split(';'):
-            logger.debug('Next node ' + currentNode)
-            source = currentNode.split(':')[0]
-            waittime = currentNode.split(':')[1]
-            waitTimes[source] = waittime
-        
-        logger.info('Wait times initialized as ' + str(waitTimes))
-        citymap.waitTimes = waitTimes
-        
         return citymap
 
 if __name__ == '__main__':
@@ -135,6 +93,6 @@ if __name__ == '__main__':
     testcitytour.setUpLogging(props,logLevel)
     citymap = testcitytour.getCityMap(props)
     
-    path = findQuickestPath(citymap,'D','E')
+    path = findQuickestPath(citymap,'D','A')
     print path
     
