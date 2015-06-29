@@ -1,0 +1,372 @@
+2015-06-28 22:21:46,311	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'A': ['B']
+2015-06-28 22:21:46,311	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'B': ['A', 'C', 'D']
+2015-06-28 22:21:46,311	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'C': ['A']
+2015-06-28 22:21:46,311	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'D': ['E', 'A']
+2015-06-28 22:21:46,311	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'E': ['B']
+2015-06-28 22:22:36,894	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'A': ['B']
+2015-06-28 22:22:36,894	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'B': ['A', 'C', 'D']
+2015-06-28 22:22:36,895	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'C': ['A']
+2015-06-28 22:22:36,895	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'D': ['E', 'A']
+2015-06-28 22:22:36,895	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'E': ['B']
+2015-06-28 22:22:44,293	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'A': ['B']
+2015-06-28 22:22:44,293	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'B': ['A', 'C', 'D']
+2015-06-28 22:22:44,293	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'C': ['A']
+2015-06-28 22:22:44,295	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'D': ['E', 'A']
+2015-06-28 22:22:44,295	DEBUG -- MainProcess testcitytour.py:75 -- Next node 'E': ['B']
+2015-06-28 22:22:44,295	INFO -- MainProcess testcitytour.py:78 -- Edges initialized as {"'A'": " ['B']", "'B'": " ['A', 'C', 'D']", "'E'": " ['B']", "'C'": " ['A']", "'D'": " ['E', 'A']"}
+2015-06-28 22:23:52,499	DEBUG -- MainProcess testcitytour.py:76 -- Next node 'A': ['B']
+2015-06-28 22:23:52,499	DEBUG -- MainProcess testcitytour.py:76 -- Next node 'B': ['A', 'C', 'D']
+2015-06-28 22:23:52,499	DEBUG -- MainProcess testcitytour.py:76 -- Next node 'C': ['A']
+2015-06-28 22:23:52,499	DEBUG -- MainProcess testcitytour.py:76 -- Next node 'D': ['E', 'A']
+2015-06-28 22:23:52,499	DEBUG -- MainProcess testcitytour.py:76 -- Next node 'E': ['B']
+2015-06-28 22:23:52,499	INFO -- MainProcess testcitytour.py:79 -- Edges initialized as {"'A'": array(" ['B']", 
+      dtype='|S6'), "'B'": array(" ['A', 'C', 'D']", 
+      dtype='|S16'), "'E'": array(" ['B']", 
+      dtype='|S6'), "'C'": array(" ['A']", 
+      dtype='|S6'), "'D'": array(" ['E', 'A']", 
+      dtype='|S11')}
+2015-06-28 22:25:50,503	DEBUG -- MainProcess testcitytour.py:76 -- Next node A:B
+2015-06-28 22:25:50,505	DEBUG -- MainProcess testcitytour.py:76 -- Next node B:A,C,D
+2015-06-28 22:25:50,505	DEBUG -- MainProcess testcitytour.py:76 -- Next node C:A
+2015-06-28 22:25:50,505	DEBUG -- MainProcess testcitytour.py:76 -- Next node D:E,A
+2015-06-28 22:25:50,505	DEBUG -- MainProcess testcitytour.py:76 -- Next node E:B
+2015-06-28 22:25:50,505	INFO -- MainProcess testcitytour.py:79 -- Edges initialized as {'A': ['B'], 'C': ['A'], 'B': ['A', 'C', 'D'], 'E': ['B'], 'D': ['E', 'A']}
+2015-06-28 22:26:10,266	DEBUG -- MainProcess testcitytour.py:76 -- Next node A:B
+2015-06-28 22:26:10,267	DEBUG -- MainProcess testcitytour.py:76 -- Next node B:A,C,D
+2015-06-28 22:26:10,267	DEBUG -- MainProcess testcitytour.py:76 -- Next node C:A
+2015-06-28 22:26:10,267	DEBUG -- MainProcess testcitytour.py:76 -- Next node D:E,A
+2015-06-28 22:26:10,267	DEBUG -- MainProcess testcitytour.py:76 -- Next node E:B
+2015-06-28 22:26:10,267	INFO -- MainProcess testcitytour.py:79 -- Edges initialized as {'A': ['B'], 'C': ['A'], 'B': ['A', 'C', 'D'], 'E': ['B'], 'D': ['E', 'A']}
+2015-06-28 22:29:39,237	DEBUG -- MainProcess testcitytour.py:76 -- Next node A:X,D
+2015-06-28 22:29:39,237	DEBUG -- MainProcess testcitytour.py:76 -- Next node X:E,B,C,A
+2015-06-28 22:29:39,237	DEBUG -- MainProcess testcitytour.py:76 -- Next node E:B,X
+2015-06-28 22:29:39,237	DEBUG -- MainProcess testcitytour.py:76 -- Next node B:D,C,X,E
+2015-06-28 22:29:39,237	DEBUG -- MainProcess testcitytour.py:76 -- Next node D:C,B,A
+2015-06-28 22:29:39,237	DEBUG -- MainProcess testcitytour.py:76 -- Next node C:X,B,D
+2015-06-28 22:29:39,237	INFO -- MainProcess testcitytour.py:79 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-28 22:32:09,160	DEBUG -- MainProcess testcitytour.py:76 -- Next node A:X,D
+2015-06-28 22:32:09,160	DEBUG -- MainProcess testcitytour.py:76 -- Next node X:E,B,C,A
+2015-06-28 22:32:09,160	DEBUG -- MainProcess testcitytour.py:76 -- Next node E:B,X
+2015-06-28 22:32:09,160	DEBUG -- MainProcess testcitytour.py:76 -- Next node B:D,C,X,E
+2015-06-28 22:32:09,160	DEBUG -- MainProcess testcitytour.py:76 -- Next node D:C,B,A
+2015-06-28 22:32:09,160	DEBUG -- MainProcess testcitytour.py:76 -- Next node C:X,B,D
+2015-06-28 22:32:09,160	INFO -- MainProcess testcitytour.py:79 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:03:37,108	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:03:37,108	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:03:37,108	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:03:37,108	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:03:37,109	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:03:37,109	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:03:37,109	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:08:39,059	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:08:39,062	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:08:39,062	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:08:39,065	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:08:39,066	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:08:39,069	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:08:39,075	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:09:14,796	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:09:14,801	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:09:14,802	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:09:14,805	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:09:14,805	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:09:14,809	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:09:14,811	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:09:47,509	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:09:47,512	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:09:47,513	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:09:47,516	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:09:47,517	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:09:47,519	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:09:47,522	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:09:51,615	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:10:05,015	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:10:05,016	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:10:05,019	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:10:05,022	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:10:05,023	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:10:50,450	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:10:50,451	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:10:50,453	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:10:50,456	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:10:50,457	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:10:50,460	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:10:50,460	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:10:52,250	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:10:52,253	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:10:52,255	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:10:52,256	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:10:52,259	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:10:52,260	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:11:38,180	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:11:38,180	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:11:38,180	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:11:38,180	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:11:38,180	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:11:38,180	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:11:38,180	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:11:40,410	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:11:40,411	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:11:40,415	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:11:40,417	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:11:40,420	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:11:40,423	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:13:26,687	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:13:26,690	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:13:26,691	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:13:26,694	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:13:26,697	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:13:26,698	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:13:26,700	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:13:28,183	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:13:28,184	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:13:28,187	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:13:28,190	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:13:28,190	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:13:28,190	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:14:48,378	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:14:48,380	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:14:48,380	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:14:48,380	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:14:48,380	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:14:48,380	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:14:48,380	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:14:48,380	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:14:48,380	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:14:48,380	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:14:48,380	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:14:48,380	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:14:48,381	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:15:18,559	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:15:18,563	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:15:18,565	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:15:18,566	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:15:18,569	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:15:18,573	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:15:18,575	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:15:20,168	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:15:20,171	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:15:20,174	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:15:20,177	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:15:20,180	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:15:20,181	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:15:39,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:15:39,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:15:39,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:15:39,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:15:39,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:15:39,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:15:39,186	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:15:39,186	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:15:39,186	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:15:39,186	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:15:39,186	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:15:39,186	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:15:39,186	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:16:07,983	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:16:07,986	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:16:07,987	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:16:07,990	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:16:07,993	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:16:07,993	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:16:07,996	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:16:09,128	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:16:09,130	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:16:09,132	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:16:09,135	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:16:09,138	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:16:09,141	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:17:16,598	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:17:16,598	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:17:16,598	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:17:16,598	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:17:16,598	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:17:16,598	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:17:16,598	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:17:16,598	DEBUG -- MainProcess path.py:13 -- Visiting 'D'
+2015-06-29 10:17:16,598	DEBUG -- MainProcess path.py:13 -- Visiting 'C'
+2015-06-29 10:17:16,598	DEBUG -- MainProcess path.py:13 -- Visiting 'B'
+2015-06-29 10:17:16,598	DEBUG -- MainProcess path.py:13 -- Visiting 'A'
+2015-06-29 10:17:16,598	DEBUG -- MainProcess path.py:13 -- Visiting 'X'
+2015-06-29 10:17:16,598	DEBUG -- MainProcess path.py:13 -- Visiting 'E'
+2015-06-29 10:22:27,355	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:22:27,355	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:22:27,355	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:22:27,355	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:22:27,355	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:22:27,355	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:22:27,355	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:22:45,158	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:22:45,158	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:22:45,158	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:22:45,158	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:22:45,158	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:22:45,158	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:22:45,158	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:22:52,782	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:22:52,782	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:22:52,782	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:22:52,782	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:22:52,782	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:22:52,782	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:22:52,782	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:23:06,520	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:23:06,520	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:23:06,520	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:23:06,520	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:23:06,520	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:23:06,520	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:23:06,520	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:23:06,520	DEBUG -- MainProcess path.py:18 -- Visiting 'D'
+2015-06-29 10:23:06,520	DEBUG -- MainProcess path.py:18 -- Visiting 'C'
+2015-06-29 10:23:06,520	DEBUG -- MainProcess path.py:18 -- Visiting 'B'
+2015-06-29 10:23:06,520	DEBUG -- MainProcess path.py:18 -- Visiting 'A'
+2015-06-29 10:23:06,520	DEBUG -- MainProcess path.py:18 -- Visiting 'X'
+2015-06-29 10:23:06,520	DEBUG -- MainProcess path.py:15 -- Goal 'E' found - breaking out
+2015-06-29 10:56:06,045	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:56:06,046	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:56:06,049	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:56:06,052	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:56:06,052	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:56:06,053	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:56:06,055	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:56:13,538	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 10:56:50,153	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:56:50,154	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:56:50,154	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:56:50,157	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:56:50,157	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:56:50,163	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:56:50,164	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:56:52,645	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 10:58:38,746	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:58:38,749	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:58:38,750	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:58:38,753	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:58:38,756	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:58:38,759	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:58:38,762	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:58:41,447	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 10:59:04,621	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:59:04,622	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:59:04,625	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:59:04,628	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:59:04,630	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:59:04,631	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:59:04,634	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:59:07,115	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 10:59:20,141	DEBUG -- MainProcess testcitytour.py:86 -- Next node X:0.5,1,0.5,1
+2015-06-29 10:59:20,145	DEBUG -- MainProcess testcitytour.py:86 -- Next node E:1,0.5
+2015-06-29 10:59:20,150	DEBUG -- MainProcess testcitytour.py:86 -- Next node B:2,2,1,1
+2015-06-29 10:59:20,151	DEBUG -- MainProcess testcitytour.py:86 -- Next node D:2,2,6
+2015-06-29 10:59:20,154	DEBUG -- MainProcess testcitytour.py:86 -- Next node C:0.5,2,2
+2015-06-29 10:59:22,838	INFO -- MainProcess testcitytour.py:93 -- Distances initialized as {'D-A': '2', 'B-C': ',', 'A-D': ',', 'D-C': '2', 'B-D': '2', 'E-B': '1', 'D-B': ',', 'X-E': '0', 'C-B': '.', 'B-E': ',', 'X-A': ',', 'X-B': '.', 'X-C': '5', 'A-X': '1', 'C-D': '5', 'C-X': '0', 'B-X': '2', 'E-X': ','}
+2015-06-29 10:59:53,920	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 10:59:53,920	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 10:59:53,920	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 10:59:53,920	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 10:59:53,920	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 10:59:53,934	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 10:59:53,934	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 10:59:57,203	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 11:01:15,766	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 11:01:15,766	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 11:01:15,766	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 11:01:15,766	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 11:01:15,780	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 11:01:15,780	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 11:01:15,780	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 11:01:16,530	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 11:01:49,167	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 11:01:49,167	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 11:01:49,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 11:01:49,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 11:01:49,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 11:01:49,184	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 11:01:49,184	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 11:01:53,096	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 11:02:06,716	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 11:02:06,716	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 11:02:06,716	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 11:02:06,716	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 11:02:06,716	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 11:02:06,730	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 11:02:06,730	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 11:02:09,322	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 11:02:48,910	DEBUG -- MainProcess testcitytour.py:77 -- Next node A:X,D
+2015-06-29 11:02:48,913	DEBUG -- MainProcess testcitytour.py:77 -- Next node X:E,B,C,A
+2015-06-29 11:02:48,914	DEBUG -- MainProcess testcitytour.py:77 -- Next node E:B,X
+2015-06-29 11:02:48,917	DEBUG -- MainProcess testcitytour.py:77 -- Next node B:D,C,X,E
+2015-06-29 11:02:48,918	DEBUG -- MainProcess testcitytour.py:77 -- Next node D:C,B,A
+2015-06-29 11:02:48,923	DEBUG -- MainProcess testcitytour.py:77 -- Next node C:X,B,D
+2015-06-29 11:02:48,926	INFO -- MainProcess testcitytour.py:80 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 11:02:52,819	DEBUG -- MainProcess testcitytour.py:86 -- Next node A:1,6
+2015-06-29 11:02:52,819	DEBUG -- MainProcess testcitytour.py:86 -- Next node X:0.5,1,0.5,1
+2015-06-29 11:02:52,819	DEBUG -- MainProcess testcitytour.py:86 -- Next node E:1,0.5
+2015-06-29 11:02:52,819	DEBUG -- MainProcess testcitytour.py:86 -- Next node B:2,2,1,1
+2015-06-29 11:02:52,819	DEBUG -- MainProcess testcitytour.py:86 -- Next node D:2,2,6
+2015-06-29 11:02:52,819	DEBUG -- MainProcess testcitytour.py:86 -- Next node C:0.5,2,2
+2015-06-29 11:02:54,474	INFO -- MainProcess testcitytour.py:93 -- Distances initialized as {'D-A': '6', 'B-C': '2', 'A-D': '6', 'D-C': '2', 'B-D': '2', 'E-B': '1', 'D-B': '2', 'X-E': '0.5', 'C-B': '2', 'B-E': '1', 'X-A': '1', 'X-B': '1', 'X-C': '0.5', 'A-X': '1', 'C-D': '2', 'C-X': '0.5', 'B-X': '1', 'E-X': '0.5'}
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:83 -- Next node A:X,D
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:83 -- Next node X:E,B,C,A
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:83 -- Next node E:B,X
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:83 -- Next node B:D,C,X,E
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:83 -- Next node D:C,B,A
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:83 -- Next node C:X,B,D
+2015-06-29 12:21:23,792	INFO -- MainProcess testcitytour.py:86 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:101 -- Next node A:1,6
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:101 -- Next node X:0.5,1,0.5,1
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:101 -- Next node E:1,0.5
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:101 -- Next node B:2,2,1,1
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:101 -- Next node D:2,2,6
+2015-06-29 12:21:23,792	DEBUG -- MainProcess testcitytour.py:101 -- Next node C:0.5,2,2
+2015-06-29 12:21:23,792	INFO -- MainProcess testcitytour.py:108 -- Distances initialized as {'D-A': '6', 'B-C': '2', 'A-D': '6', 'D-C': '2', 'B-D': '2', 'E-B': '1', 'D-B': '2', 'X-E': '0.5', 'C-B': '2', 'B-E': '1', 'X-A': '1', 'X-B': '1', 'X-C': '0.5', 'A-X': '1', 'C-D': '2', 'C-X': '0.5', 'B-X': '1', 'E-X': '0.5'}
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:83 -- Next node A:X,D
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:83 -- Next node X:E,B,C,A
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:83 -- Next node E:B,X
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:83 -- Next node B:D,C,X,E
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:83 -- Next node D:C,B,A
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:83 -- Next node C:X,B,D
+2015-06-29 12:22:01,224	INFO -- MainProcess testcitytour.py:86 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:101 -- Next node A:1,6
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:101 -- Next node X:0.5,1,0.5,1
+2015-06-29 12:22:01,224	DEBUG -- MainProcess testcitytour.py:101 -- Next node E:1,0.5
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:101 -- Next node B:2,2,1,1
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:101 -- Next node D:2,2,6
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:101 -- Next node C:0.5,2,2
+2015-06-29 12:22:01,226	INFO -- MainProcess testcitytour.py:108 -- Distances initialized as {'D-A': '6', 'B-C': '2', 'A-D': '6', 'D-C': '2', 'B-D': '2', 'E-B': '1', 'D-B': '2', 'X-E': '0.5', 'C-B': '2', 'B-E': '1', 'X-A': '1', 'X-B': '1', 'X-C': '0.5', 'A-X': '1', 'C-D': '2', 'C-X': '0.5', 'B-X': '1', 'E-X': '0.5'}
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:121 -- Next node A:30
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:121 -- Next node X:?
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:121 -- Next node E:30
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:121 -- Next node B:30
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:121 -- Next node D:30
+2015-06-29 12:22:01,226	DEBUG -- MainProcess testcitytour.py:121 -- Next node C:30
+2015-06-29 12:22:01,226	INFO -- MainProcess testcitytour.py:126 -- Wait times initialized as {'A': '30', 'C': '30', 'B': '30', 'E': '30', 'D': '30', 'X': '?'}
+2015-06-29 12:22:01,226	DEBUG -- MainProcess path.py:39 -- Visiting 'D'
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:83 -- Next node A:X,D
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:83 -- Next node X:E,B,C,A
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:83 -- Next node E:B,X
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:83 -- Next node B:D,C,X,E
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:83 -- Next node D:C,B,A
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:83 -- Next node C:X,B,D
+2015-06-29 12:22:16,598	INFO -- MainProcess testcitytour.py:86 -- Edges initialized as {'A': ['X', 'D'], 'C': ['X', 'B', 'D'], 'B': ['D', 'C', 'X', 'E'], 'E': ['B', 'X'], 'D': ['C', 'B', 'A'], 'X': ['E', 'B', 'C', 'A']}
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:101 -- Next node A:1,6
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:101 -- Next node X:0.5,1,0.5,1
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:101 -- Next node E:1,0.5
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:101 -- Next node B:2,2,1,1
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:101 -- Next node D:2,2,6
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:101 -- Next node C:0.5,2,2
+2015-06-29 12:22:16,598	INFO -- MainProcess testcitytour.py:108 -- Distances initialized as {'D-A': '6', 'B-C': '2', 'A-D': '6', 'D-C': '2', 'B-D': '2', 'E-B': '1', 'D-B': '2', 'X-E': '0.5', 'C-B': '2', 'B-E': '1', 'X-A': '1', 'X-B': '1', 'X-C': '0.5', 'A-X': '1', 'C-D': '2', 'C-X': '0.5', 'B-X': '1', 'E-X': '0.5'}
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:121 -- Next node A:30
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:121 -- Next node X:?
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:121 -- Next node E:30
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:121 -- Next node B:30
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:121 -- Next node D:30
+2015-06-29 12:22:16,598	DEBUG -- MainProcess testcitytour.py:121 -- Next node C:30
+2015-06-29 12:22:16,598	INFO -- MainProcess testcitytour.py:126 -- Wait times initialized as {'A': '30', 'C': '30', 'B': '30', 'E': '30', 'D': '30', 'X': '?'}
+2015-06-29 12:22:16,598	DEBUG -- MainProcess path.py:39 -- Visiting 'D'
+2015-06-29 12:22:16,598	DEBUG -- MainProcess path.py:39 -- Visiting 'C'
+2015-06-29 12:22:16,598	DEBUG -- MainProcess path.py:39 -- Visiting 'B'
+2015-06-29 12:22:16,598	DEBUG -- MainProcess path.py:39 -- Visiting 'A'
+2015-06-29 12:22:16,598	DEBUG -- MainProcess path.py:39 -- Visiting 'X'
+2015-06-29 12:22:16,598	DEBUG -- MainProcess path.py:36 -- Goal 'E' found - breaking out
