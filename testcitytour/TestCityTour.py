@@ -24,16 +24,19 @@ class TestCityTour():
     default_log_file = 'testcitytour.log'
     default_log_dir = '.'
 
-    def usage(self,exit=0):
-        print 'TestCityTour.py -h -c <configFile> -l <logLevel>'
-        sys.exit(exit)
+    def usage(self,ex=0):
+        print 'TestCityTour.py -c <configFile> -l <logLevel> -s<start> -e<end>'
+        sys.exit(ex)
             
     def configure(self,argv):
         configFile = ''
         logLevel = 'info'
+        start = ''
+        end = ''
         try:
-            opts, args = getopt.getopt(argv[1:],"hc:l:",["cfile=","lLevel="])
-        except getopt.GetoptError:
+            opts, args = getopt.getopt(argv[1:],"hc:l:s:e:",["help","cfile=","lLevel=","start=","end="])
+        except getopt.GetoptError as err:
+            print(err)
             self.usage(2)
         for opt, arg in opts:
             if opt == '-h':
@@ -42,16 +45,26 @@ class TestCityTour():
                 configFile = arg
             elif opt in ("-l", "--lLevel"):
                 logLevel = arg
+            elif opt in ("-s", "--start"):
+                start = arg
+            elif opt in ("-e", "--end"):
+                end = arg
 
         if (configFile == '' or not os.path.exists(configFile)): # add a check for ending with '/' on configDir later
             self.usage(2)
-            
+        
         print 'Config File is ', configFile
         print 'Log level is ', logLevel
+        print 'Log file is at ', self.default_log_file
+
+        print 'Start at ' + start
+        print 'End at ' + end
+
         props = dict(line.strip().split('=') for line in open(configFile))
-        return props,logLevel
+        return props,logLevel,start,end
                 
     def setUpLogging(self,props,logLevel):
+        
         logFile = self.default_log_file
         logDir = self.default_log_dir
         if 'LOGFILE' in props:
@@ -70,9 +83,11 @@ class TestCityTour():
         logger.setLevel(level=LEVELS[logLevel])
     
     def getCityMap(self,props):
+        
         value = props.get('map')
         if(value==None):
             raise ValueError('Could not find map in properties')
+        
         citymap = CityMap()
         citymap.setEdges(value)
 
@@ -102,13 +117,31 @@ class TestCityTour():
         return citymap
 
 if __name__ == '__main__':
+    
+    try:
+        
+        testcitytour = TestCityTour()
+        
+        props,logLevel,start,end = testcitytour.configure(sys.argv)
+        
+        if (start=='' or end == ''):
+            raise ValueError('Invalid start or end specified ')
 
-    testcitytour = TestCityTour()
-    props,logLevel = testcitytour.configure(sys.argv)
-    testcitytour.setUpLogging(props,logLevel)
-    citymap = testcitytour.getCityMap(props)
-    
-    path,timetaken = findQuickestPath(citymap,'E','B')
-    print 'Fastest Path is ' + str(path)
-    print 'Time taken ' + str(timetaken)
-    
+        testcitytour.setUpLogging(props,logLevel)
+        
+        logger.info('-----------------------------START PROCESSING---------------------------------------')
+        citymap = testcitytour.getCityMap(props)
+
+        path,timetaken = findQuickestPath(citymap,start,end)
+        
+        logger.info('Fastest Path is ' + str(path))
+        logger.info('Time taken ' + str(timetaken))
+        print 'Fastest Path is ' + str(path)
+        print 'Time taken ' + str(timetaken) + ' seconds'
+
+    except ValueError as err:
+        
+        logger.error(err)
+        print 'There was an error . Please check the log file for details '
+        
+    logger.info('-----------------------------END PROCESSING---------------------------------------')
