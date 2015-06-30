@@ -70,19 +70,34 @@ class TestCityTour():
         logger.setLevel(level=LEVELS[logLevel])
     
     def getCityMap(self,props):
-        value = props['map']
+        value = props.get('map')
+        if(value==None):
+            raise ValueError('Could not find map in properties')
         citymap = CityMap()
         citymap.setEdges(value)
 
         # can be optimized to hold single entry for bi-directional paths
-        value = props['dist']
+        value = props.get('dist')
+        if(value==None):
+            raise ValueError('Could not find distances in properties')
         citymap.setDistances(value)
 
-        value = props['waittimes']
+        value = props.get('waittimes')
+        if(value==None):
+            raise ValueError('Could not find wait times in properties')
         citymap.setWaitTimes(value)
 
-        value = props['avgspeed']
+        value = props.get('avgspeed')
+        if(value==None):
+            raise ValueError('Could not find avg speed in properties')
         citymap.setAvgSpeed(value)
+
+        for l in ['leftright_of_X','topbottom_of_X','leftWait','rightWait','topWait','bottomWait']:
+            value = props.get(l)
+            if(value==None):
+                raise ValueError('Could not find ' + l + ' ' + ' of X in properties')
+
+        citymap.setXWaitingList(props['leftright_of_X'],props['topbottom_of_X'],props['leftWait'],props['rightWait'],props['topWait'],props['bottomWait'])
 
         return citymap
 
@@ -93,6 +108,7 @@ if __name__ == '__main__':
     testcitytour.setUpLogging(props,logLevel)
     citymap = testcitytour.getCityMap(props)
     
-    path = findQuickestPath(citymap,'D','A')
-    print path
+    path,timetaken = findQuickestPath(citymap,'E','B')
+    print 'Fastest Path is ' + str(path)
+    print 'Time taken ' + str(timetaken)
     
